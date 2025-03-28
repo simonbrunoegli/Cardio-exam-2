@@ -26,12 +26,20 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e3ec26786475439841706a578bf8485c">
+		["MD5-CAM-1.0.1"] = <"de2a16fb308d22cc58a6e57d7a3566e8">
 		["build_uid"] = <"1a3e6d7e-c184-3f47-af09-ecd85b5db047">
 	>
 
 definition
-	CLUSTER[at0000] matches {*}    -- Examination of the heart
+	CLUSTER[at0000] matches {    -- Examination of the heart
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- System or structure examined
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -40,6 +48,11 @@ ontology
 				["at0000"] = <
 					text = <"Examination of the heart">
 					description = <"examination_of_the_heart">
+				>
+				["at0001"] = <
+					text = <"System or structure examined">
+					description = <"Identification of the examined body system or anatomical structure.">
+					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
 				>
 			>
 		>
