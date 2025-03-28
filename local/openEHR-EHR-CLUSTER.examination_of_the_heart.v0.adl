@@ -1,0 +1,46 @@
+archetype (adl_version=1.4; uid=5d234d58-867a-47de-86ad-9531a019260a)
+	openEHR-EHR-CLUSTER.examination_of_the_heart.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-03-28">
+		["name"] = <"Simon Egli">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"simon.egli@usb.ch">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e3ec26786475439841706a578bf8485c">
+		["build_uid"] = <"1a3e6d7e-c184-3f47-af09-ecd85b5db047">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Examination of the heart
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Examination of the heart">
+					description = <"examination_of_the_heart">
+				>
+			>
+		>
+	>
