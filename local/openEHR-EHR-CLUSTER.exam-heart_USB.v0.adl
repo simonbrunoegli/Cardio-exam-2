@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"21e79163cfdc2418f0ab097523166fff">
+		["MD5-CAM-1.0.1"] = <"dddd9315a37206015e422e2da64faa2d">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -298,6 +298,16 @@ definition
 						}
 					}
 					ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Response to maneuvers
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.15] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -413,6 +423,14 @@ ontology
 					text = <"Response to maneuvers">
 					description = <"Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva).">
 				>
+				["at0.14"] = <
+					text = <"Clinical interpretation">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound.">
+				>
+				["at0.15"] = <
+					text = <"Comment">
+					description = <"Additional narrative about a heart sound, not captured in other fields.">
+				>
 			>
 		>
 		["nb"] = <
@@ -517,6 +535,14 @@ ontology
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
 				>
 			>
 		>
@@ -623,6 +649,14 @@ ontology
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
 				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -727,6 +761,14 @@ ontology
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
 				>
 			>
 		>
@@ -833,6 +875,14 @@ ontology
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
 				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -938,6 +988,14 @@ ontology
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
 				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -1042,6 +1100,14 @@ ontology
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
 					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+				["at0.14"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+				>
+				["at0.15"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
 				>
 			>
 		>
