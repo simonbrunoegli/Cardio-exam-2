@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"df82d808db00a1c12d51050d112b3020">
+		["MD5-CAM-1.0.1"] = <"01cb1d760dbdbe68d69395c2e9bfb588">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -987,16 +987,16 @@ ontology
 					description = <"Beschreibung der Veränderung (Verstärkung, Abschwächung) eines Herzgeräuschs durch verschiedene Manöver (z.B. Valsalva, Positionswechsel).">
 				>
 				["at0.26"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart murmur. (en)">
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit eines Herzgeräuschs darstellt.">
 				>
 				["at0.27"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung eines Herztons, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0.28"] = <
-					text = <"*Pericardial rub (en)">
-					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
+					text = <"Perikardreiben">
+					description = <"Beschreibung eines Perikardreibens.">
 				>
 				["at0000"] = <
 					text = <"Ergebnisse der körperlichen Untersuchung">
