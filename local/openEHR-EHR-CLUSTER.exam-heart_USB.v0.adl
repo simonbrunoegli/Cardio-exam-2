@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eeb7cc165ffdf5bbfb7298803739c791">
+		["MD5-CAM-1.0.1"] = <"2ea8f809061a6d83f311e37252f14755">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -250,7 +250,7 @@ definition
 				include
 					archetype_id/value matches {/openEHR-EHR-CLUSTER\.exclusion_exam(-[a-zA-Z0-9_]+)*\.v1/}
 			}
-			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Heart sounds description
+			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Inspection of the precordium
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -275,10 +275,6 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
-				>
-				["at0.2"] = <
-					text = <"Heart sounds description">
-					description = <"Narrative description of the heart sounds.">
 				>
 				["at0000"] = <
 					text = <"Physical examination findings">
@@ -324,6 +320,10 @@ ontology
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
+				["at0.3"] = <
+					text = <"Inspection of the precordium">
+					description = <"Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker).">
+				>
 			>
 		>
 		["nb"] = <
@@ -340,10 +340,6 @@ ontology
 				["at0.1"] = <
 					text = <"*Heart (en)">
 					description = <"*The heart was examined. (en)">
-				>
-				["at0.2"] = <
-					text = <"*Heart sounds description (en)">
-					description = <"*Narrative description of the heart sounds. (en)">
 				>
 				["at0000"] = <
 					text = <"Funn ved fysisk undersøkelse">
@@ -389,6 +385,10 @@ ontology
 					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
 					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
 				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -405,10 +405,6 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
-				>
-				["at0.2"] = <
-					text = <"*Heart sounds description (en)">
-					description = <"*Narrative description of the heart sounds. (en)">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -454,6 +450,10 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -461,10 +461,6 @@ ontology
 				["at0.1"] = <
 					text = <"Herz">
 					description = <"Das Herz wurde untersucht.">
-				>
-				["at0.2"] = <
-					text = <"Beschreibung der Herztöne">
-					description = <"Allgemeine Beschreibung der Herztöne.">
 				>
 				["at0000.1"] = <
 					text = <"*Examination of the heart USB (en)">
@@ -519,6 +515,10 @@ ontology
 					description = <"Identifizierung des untersuchten Körperbereichs.">
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
 			>
 		>
 		["sv"] = <
@@ -535,10 +535,6 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
-				>
-				["at0.2"] = <
-					text = <"Heart sounds description">
-					description = <"Narrative description of the heart sounds.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -584,6 +580,10 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -600,10 +600,6 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
-				>
-				["at0.2"] = <
-					text = <"Heart sounds description">
-					description = <"Narrative description of the heart sounds.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -649,6 +645,10 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -665,10 +665,6 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
-				>
-				["at0.2"] = <
-					text = <"Heart sounds description">
-					description = <"Narrative description of the heart sounds.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -713,6 +709,10 @@ ontology
 					text = <"*Body site(en)">
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
 				>
 			>
 		>
