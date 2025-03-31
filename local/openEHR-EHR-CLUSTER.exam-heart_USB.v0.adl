@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4139dc81a1eb63fe60beee06d6571c3d">
+		["MD5-CAM-1.0.1"] = <"e650bcc9243264e3e640f5cab2810dd5">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -298,11 +298,6 @@ definition
 						}
 					}
 					ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Response to maneuvers
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0.29] occurrences matches {0..1} matches {    -- Position of patient
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -446,7 +441,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"Response to maneuvers">
-					description = <"Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva).">
+					description = <"Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position).">
 				>
 				["at0.14"] = <
 					text = <"Clinical interpretation">
@@ -552,10 +547,6 @@ ontology
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
-				["at0.29"] = <
-					text = <"Position of patient">
-					description = <"Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting).">
-				>
 			>
 		>
 		["nb"] = <
@@ -615,7 +606,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position). (en)">
 				>
 				["at0.14"] = <
 					text = <"*Clinical interpretation (en)">
@@ -721,10 +712,6 @@ ontology
 					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
 					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
 				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
-				>
 			>
 		>
 		["pt-br"] = <
@@ -784,7 +771,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position). (en)">
 				>
 				["at0.14"] = <
 					text = <"*Clinical interpretation (en)">
@@ -890,10 +877,6 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
-				>
 			>
 		>
 		["de"] = <
@@ -953,7 +936,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"Veränderung durch Manöver">
-					description = <"Beschreibung der Veränderung eines Herztons durch Manöver (z.B. Valsalva).">
+					description = <"Beschreibung der Veränderung eines Herztons durch verschiedene Manöver (z.B. Valsalva, Positionswechsel).">
 				>
 				["at0.14"] = <
 					text = <"Klinische Interpretation">
@@ -1059,10 +1042,6 @@ ontology
 					description = <"Identifizierung des untersuchten Körperbereichs.">
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
-				>
 			>
 		>
 		["sv"] = <
@@ -1122,7 +1101,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position). (en)">
 				>
 				["at0.14"] = <
 					text = <"*Clinical interpretation (en)">
@@ -1228,10 +1207,6 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
-				>
 			>
 		>
 		["el"] = <
@@ -1291,7 +1266,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position). (en)">
 				>
 				["at0.14"] = <
 					text = <"*Clinical interpretation (en)">
@@ -1397,10 +1372,6 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
-				>
 			>
 		>
 		["es"] = <
@@ -1460,7 +1431,7 @@ ontology
 				>
 				["at0.13"] = <
 					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva, change of position). (en)">
 				>
 				["at0.14"] = <
 					text = <"*Clinical interpretation (en)">
@@ -1565,10 +1536,6 @@ ontology
 					text = <"*Body site(en)">
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
-				>
-				["at0.29"] = <
-					text = <"*Position of patient (en)">
-					description = <"*Narrative description of the position of a patient during the examination of a heart sound (e.g., sitting). (en)">
 				>
 			>
 		>
