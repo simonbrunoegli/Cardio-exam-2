@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"017c14898a7e3c77b320e490866b5fce">
+		["MD5-CAM-1.0.1"] = <"ccd54e8e890741c0ec8b96253bd72c93">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -373,6 +373,11 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0.28] occurrences matches {0..1} matches {    -- Pericardial rub
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
 
@@ -538,6 +543,10 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about a heart murmur, not captured in other fields.">
 				>
+				["at0.28"] = <
+					text = <"Pericardial rub">
+					description = <"Narrative description of a pericardial rub (friction rub).">
+				>
 			>
 		>
 		["nb"] = <
@@ -698,6 +707,10 @@ ontology
 				["at0.27"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
+				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
 				>
 			>
 		>
@@ -860,6 +873,10 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
 				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -1020,6 +1037,10 @@ ontology
 				["at0.27"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
+				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
 				>
 			>
 		>
@@ -1182,6 +1203,10 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
 				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -1343,6 +1368,10 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
 				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -1503,6 +1532,10 @@ ontology
 				["at0.27"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about a heart murmur, not captured in other fields. (en)">
+				>
+				["at0.28"] = <
+					text = <"*Pericardial rub (en)">
+					description = <"*Narrative description of a pericardial rub (friction rub). (en)">
 				>
 			>
 		>
