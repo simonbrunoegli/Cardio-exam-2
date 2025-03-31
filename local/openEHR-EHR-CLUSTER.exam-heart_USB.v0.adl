@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e650bcc9243264e3e640f5cab2810dd5">
+		["MD5-CAM-1.0.1"] = <"7066f628bc11ca7a0a3b7033a6c52896">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -453,7 +453,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"Heart murmur">
-					description = <"">
+					description = <"Detailed description of a heart murmur.">
 				>
 				["at0.17"] = <
 					text = <"Clinical description">
@@ -618,7 +618,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
-					description = <"">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
@@ -783,7 +783,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
-					description = <"">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
@@ -947,8 +947,8 @@ ontology
 					description = <"Zusätzliche Beschreibung eines Herztons, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0.16"] = <
-					text = <"*Heart murmur (en)">
-					description = <"">
+					text = <"Herzgeräusch">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
@@ -1113,7 +1113,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
-					description = <"">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
@@ -1278,7 +1278,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
-					description = <"">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
@@ -1443,7 +1443,7 @@ ontology
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
-					description = <"">
+					description = <"*Detailed description of a heart murmur. (en)">
 				>
 				["at0.17"] = <
 					text = <"*Clinical description (en)">
