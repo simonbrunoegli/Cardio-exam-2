@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3863fcedd58bb5ae1611968e3319c58b">
+		["MD5-CAM-1.0.1"] = <"df82d808db00a1c12d51050d112b3020">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -956,35 +956,35 @@ ontology
 				>
 				["at0.18"] = <
 					text = <"Zeitpunkt und Dauer">
-					description = <"Beschreibung des Zeitpunkts und der Dauer eines Herzgeräuschs, d.h. ob ein Herzgeräusch während der Systole oder der Diastole auftritt oder kontinuierlich ist und ob ein Geräusch pansystolisch, mittsystolisch, spätsystolisch usw. ist.">
+					description = <"Beschreibung des Zeitpunkts und der Dauer eines Herzgeräuschs, d.h. ob ein Herzgeräusch während der Systole oder der Diastole auftritt oder kontinuierlich ist und ob ein Geräusch frühsystolisch, holosystolisch usw. ist.">
 				>
 				["at0.19"] = <
-					text = <"*Quality/character (en)">
-					description = <"*Narrative description of the quality/character of a heart murmur (e.g., harsh, blowing, musical, or rumbling). (en)">
+					text = <"Qualität/Charakter">
+					description = <"Beschreibung der Qualität/des Charakters eines Herzgeräuschs.">
 				>
 				["at0.20"] = <
-					text = <"*Pitch (en)">
-					description = <"*Narrative description of the pitch of a heart murmur (e.g., low, medium, or high). (en)">
+					text = <"Tonfrequenz">
+					description = <"Beschreibung der Tonfrequenz eines Herzgeräuschs (z.B. niederfrequent, mittelfrequent, hochfrequent).">
 				>
 				["at0.21"] = <
-					text = <"*Intensity (en)">
-					description = <"*Description of the intensity of a heart murmur on a grading scale from 1 to 6 (Levine scale). (en)">
+					text = <"Lautstärke">
+					description = <"Beschreibung der Lautstärke eines Herztgeräuschs auf einer Skala von 1 bis 6 (Levine-Skala).">
 				>
 				["at0.22"] = <
-					text = <"*Shape (en)">
-					description = <"*Narrative description of the change of intensity of a heart murmur over time (e.g., crescendo, decrescendo, or crescendo-decrescendo). (en)">
+					text = <"Form">
+					description = <"Beschreibung der Veränderung der Intensität eines Herzgeräuschs über die Zeit (z. B. crescendo, decrescendo oder crescendo-decrescendo).">
 				>
 				["at0.23"] = <
-					text = <"*Location (en)">
-					description = <"*Narrative description of the site(s) where a murmur is heard best. (en)">
+					text = <"Ort">
+					description = <"Beschreibung des Ortes der grössten Lautstärke eines Herztgeräuschs (Punctum maximum = p. m.).">
 				>
 				["at0.24"] = <
-					text = <"*Radiation (en)">
-					description = <"*Narrative description of the direction in which a murmur radiates (e.g., towards the left axilla or the carotid arteries). (en)">
+					text = <"Ausstrahlung">
+					description = <"Beschreibung der Ausstrahlung eines Herztgeräuschs (z.B. in Richtung der linken Axilla oder der Arteria carotis).">
 				>
 				["at0.25"] = <
-					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a murmur with various maneuvers (e.g., valsalva). (en)">
+					text = <"Veränderung durch Manöver">
+					description = <"Beschreibung der Veränderung (Verstärkung, Abschwächung) eines Herzgeräuschs durch verschiedene Manöver (z.B. Valsalva, Positionswechsel).">
 				>
 				["at0.26"] = <
 					text = <"*Clinical interpretation (en)">
