@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"26df97bc7013430636c2198adc838026">
+		["MD5-CAM-1.0.1"] = <"21e79163cfdc2418f0ab097523166fff">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -292,6 +292,16 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0.12] occurrences matches {0..1} matches {    -- Splitting
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Response to maneuvers
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 				}
 			}
 		}
@@ -314,6 +324,42 @@ ontology
 				["at0.1"] = <
 					text = <"Heart">
 					description = <"The heart was examined.">
+				>
+				["at0.3"] = <
+					text = <"Inspection of the precordium">
+					description = <"Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker).">
+				>
+				["at0.4"] = <
+					text = <"Palpation of the precordium">
+					description = <"Narrative description of the palpation of the precordium (e.g., apex beat, parasternal heave, thrills).">
+				>
+				["at0.5"] = <
+					text = <"Heart sound">
+					description = <"Detailed description of a heart sound (e.g., first heart sound, second heart sound, third heart sound, fourth heart sound, added heart sounds).">
+				>
+				["at0.6"] = <
+					text = <"Clinical description">
+					description = <"Narrative description of a heart sound.">
+				>
+				["at0.7"] = <
+					text = <"Timing">
+					description = <"Narrative description of the timing of a heart sound (e.g. early diastole).">
+				>
+				["at0.8"] = <
+					text = <"Quality/Character">
+					description = <"Narrative description of the quality/character of a heart sound (e.g., booming, dull).">
+				>
+				["at0.9"] = <
+					text = <"Pitch">
+					description = <"Narrative description of the pitch of a heart sound (e.g., low, medium, or high).">
+				>
+				["at0.10"] = <
+					text = <"Intensity">
+					description = <"Narrative description of the intensity of a heart sound.">
+				>
+				["at0.11"] = <
+					text = <"Location">
+					description = <"Narrative description of the site(s) where a heart sound is heard best.">
 				>
 				["at0000"] = <
 					text = <"Physical examination findings">
@@ -359,41 +405,13 @@ ontology
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
-				["at0.3"] = <
-					text = <"Inspection of the precordium">
-					description = <"Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker).">
+				["at0.12"] = <
+					text = <"Splitting">
+					description = <"Narrative description of the splitting of a heart sound.">
 				>
-				["at0.4"] = <
-					text = <"Palpation of the precordium">
-					description = <"Narrative description of the palpation of the precordium (e.g., apex beat, parasternal heave, thrills).">
-				>
-				["at0.5"] = <
-					text = <"Heart sound">
-					description = <"Detailed description of a heart sound (e.g., first heart sound, second heart sound, third heart sound, fourth heart sound, added heart sounds).">
-				>
-				["at0.6"] = <
-					text = <"Clinical description">
-					description = <"Narrative description of a heart sound.">
-				>
-				["at0.7"] = <
-					text = <"Timing">
-					description = <"Narrative description of the timing of a heart sound (e.g. early diastole).">
-				>
-				["at0.8"] = <
-					text = <"Quality/Character">
-					description = <"Narrative description of the quality/character of a heart sound (e.g., booming, dull).">
-				>
-				["at0.9"] = <
-					text = <"Pitch">
-					description = <"Narrative description of the pitch of a heart sound (e.g., low, medium, or high).">
-				>
-				["at0.10"] = <
-					text = <"Intensity">
-					description = <"Narrative description of the intensity of a heart sound.">
-				>
-				["at0.11"] = <
-					text = <"Location">
-					description = <"Narrative description of the site(s) where a heart sound is heard best.">
+				["at0.13"] = <
+					text = <"Response to maneuvers">
+					description = <"Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva).">
 				>
 			>
 		>
@@ -411,6 +429,42 @@ ontology
 				["at0.1"] = <
 					text = <"*Heart (en)">
 					description = <"*The heart was examined. (en)">
+				>
+				["at0.3"] = <
+					text = <"*Inspection of the precordium (en)">
+					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				>
+				["at0.4"] = <
+					text = <"*Palpation of the precordium (en)">
+					description = <"*Narrative description of the palpation of the precordium (e.g., apex beat, parasternal heave, thrills). (en)">
+				>
+				["at0.5"] = <
+					text = <"*Heart sound (en)">
+					description = <"*Detailed description of a heart sound (e.g., first heart sound, second heart sound, third heart sound, fourth heart sound, added heart sounds). (en)">
+				>
+				["at0.6"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of a heart sound. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Timing (en)">
+					description = <"*Narrative description of the timing of a heart sound (e.g. early diastole). (en)">
+				>
+				["at0.8"] = <
+					text = <"*Quality/Character (en)">
+					description = <"*Narrative description of the quality/character of a heart sound (e.g., booming, dull). (en)">
+				>
+				["at0.9"] = <
+					text = <"*Pitch (en)">
+					description = <"*Narrative description of the pitch of a heart sound (e.g., low, medium, or high). (en)">
+				>
+				["at0.10"] = <
+					text = <"*Intensity (en)">
+					description = <"*Narrative description of the intensity of a heart sound. (en)">
+				>
+				["at0.11"] = <
+					text = <"*Location (en)">
+					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
 				>
 				["at0000"] = <
 					text = <"Funn ved fysisk undersøkelse">
@@ -456,6 +510,31 @@ ontology
 					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
 					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
 				>
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+			>
+		>
+		["pt-br"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the heart USB (en)">
+					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
+				>
+				["at0001.1"] = <
+					text = <"Sistema ou estrutura examinada">
+					description = <"Identificação do sistema do corpo examinado ou da estrutura anatômica.">
+					comment = <"A codificação do sistema ou estrutura examinada com uma terminologia é preferível, sempre que possível.">
+				>
+				["at0.1"] = <
+					text = <"Heart">
+					description = <"The heart was examined.">
+				>
 				["at0.3"] = <
 					text = <"*Inspection of the precordium (en)">
 					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
@@ -491,23 +570,6 @@ ontology
 				["at0.11"] = <
 					text = <"*Location (en)">
 					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
-				>
-			>
-		>
-		["pt-br"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the heart USB (en)">
-					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
-				>
-				["at0001.1"] = <
-					text = <"Sistema ou estrutura examinada">
-					description = <"Identificação do sistema do corpo examinado ou da estrutura anatômica.">
-					comment = <"A codificação do sistema ou estrutura examinada com uma terminologia é preferível, sempre que possível.">
-				>
-				["at0.1"] = <
-					text = <"Heart">
-					description = <"The heart was examined.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -553,6 +615,31 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0.1"] = <
+					text = <"Herz">
+					description = <"Das Herz wurde untersucht.">
+				>
+				["at0000.1"] = <
+					text = <"*Examination of the heart USB (en)">
+					description = <"Befunde bei der körperlichen Untersuchung des Herzens.">
+				>
+				["at0001.1"] = <
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Codierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
+				>
 				["at0.3"] = <
 					text = <"*Inspection of the precordium (en)">
 					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
@@ -588,23 +675,6 @@ ontology
 				["at0.11"] = <
 					text = <"*Location (en)">
 					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
-				>
-			>
-		>
-		["de"] = <
-			items = <
-				["at0.1"] = <
-					text = <"Herz">
-					description = <"Das Herz wurde untersucht.">
-				>
-				["at0000.1"] = <
-					text = <"*Examination of the heart USB (en)">
-					description = <"Befunde bei der körperlichen Untersuchung des Herzens.">
-				>
-				["at0001.1"] = <
-					text = <"Untersuchtes System oder untersuchte Struktur">
-					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
-					comment = <"Wenn möglich wird die Codierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
 				>
 				["at0000"] = <
 					text = <"Ergebnisse der körperlichen Untersuchung">
@@ -650,6 +720,31 @@ ontology
 					description = <"Identifizierung des untersuchten Körperbereichs.">
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the heart USB (en)">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
+				>
+				["at0001.1"] = <
+					text = <"System eller struktur som undersökts">
+					description = <"Identifiering av systemet eller strukturen som undersökts.">
+					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
+				>
+				["at0.1"] = <
+					text = <"Heart">
+					description = <"The heart was examined.">
+				>
 				["at0.3"] = <
 					text = <"*Inspection of the precordium (en)">
 					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
@@ -685,23 +780,6 @@ ontology
 				["at0.11"] = <
 					text = <"*Location (en)">
 					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
-				>
-			>
-		>
-		["sv"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the heart USB (en)">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
-				>
-				["at0001.1"] = <
-					text = <"System eller struktur som undersökts">
-					description = <"Identifiering av systemet eller strukturen som undersökts.">
-					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
-				>
-				["at0.1"] = <
-					text = <"Heart">
-					description = <"The heart was examined.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -747,6 +825,31 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+			>
+		>
+		["el"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the heart USB (en)">
+					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
+				>
+				["at0001.1"] = <
+					text = <"Εξεταζόμενο σύστημα ή δομή">
+					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
+					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
+				>
+				["at0.1"] = <
+					text = <"Heart">
+					description = <"The heart was examined.">
+				>
 				["at0.3"] = <
 					text = <"*Inspection of the precordium (en)">
 					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
@@ -782,23 +885,6 @@ ontology
 				["at0.11"] = <
 					text = <"*Location (en)">
 					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
-				>
-			>
-		>
-		["el"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the heart USB (en)">
-					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
-				>
-				["at0001.1"] = <
-					text = <"Εξεταζόμενο σύστημα ή δομή">
-					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
-					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
-				>
-				["at0.1"] = <
-					text = <"Heart">
-					description = <"The heart was examined.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -844,6 +930,31 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+				>
+			>
+		>
+		["es"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the heart USB (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
+				>
+				["at0001.1"] = <
+					text = <"*System or structure examined(en)">
+					description = <"*Identification of the examined body system or anatomical structure.(en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
+				>
+				["at0.1"] = <
+					text = <"Heart">
+					description = <"The heart was examined.">
+				>
 				["at0.3"] = <
 					text = <"*Inspection of the precordium (en)">
 					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
@@ -879,23 +990,6 @@ ontology
 				["at0.11"] = <
 					text = <"*Location (en)">
 					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
-				>
-			>
-		>
-		["es"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the heart USB (en)">
-					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
-				>
-				["at0001.1"] = <
-					text = <"*System or structure examined(en)">
-					description = <"*Identification of the examined body system or anatomical structure.(en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
-				>
-				["at0.1"] = <
-					text = <"Heart">
-					description = <"The heart was examined.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -941,41 +1035,13 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
-				["at0.3"] = <
-					text = <"*Inspection of the precordium (en)">
-					description = <"*Narrative description of the inspection of the precordium, i.e., the shape, skin, and soft tissue of the precordium (e.g., pectus excavatum, sternotomy scar,  bulge of a pacemaker). (en)">
+				["at0.12"] = <
+					text = <"*Splitting (en)">
+					description = <"*Narrative description of the splitting of a heart sound. (en)">
 				>
-				["at0.4"] = <
-					text = <"*Palpation of the precordium (en)">
-					description = <"*Narrative description of the palpation of the precordium (e.g., apex beat, parasternal heave, thrills). (en)">
-				>
-				["at0.5"] = <
-					text = <"*Heart sound (en)">
-					description = <"*Detailed description of a heart sound (e.g., first heart sound, second heart sound, third heart sound, fourth heart sound, added heart sounds). (en)">
-				>
-				["at0.6"] = <
-					text = <"*Clinical description (en)">
-					description = <"*Narrative description of a heart sound. (en)">
-				>
-				["at0.7"] = <
-					text = <"*Timing (en)">
-					description = <"*Narrative description of the timing of a heart sound (e.g. early diastole). (en)">
-				>
-				["at0.8"] = <
-					text = <"*Quality/Character (en)">
-					description = <"*Narrative description of the quality/character of a heart sound (e.g., booming, dull). (en)">
-				>
-				["at0.9"] = <
-					text = <"*Pitch (en)">
-					description = <"*Narrative description of the pitch of a heart sound (e.g., low, medium, or high). (en)">
-				>
-				["at0.10"] = <
-					text = <"*Intensity (en)">
-					description = <"*Narrative description of the intensity of a heart sound. (en)">
-				>
-				["at0.11"] = <
-					text = <"*Location (en)">
-					description = <"*Narrative description of the site(s) where a heart sound is heard best. (en)">
+				["at0.13"] = <
+					text = <"*Response to maneuvers (en)">
+					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
 				>
 			>
 		>
