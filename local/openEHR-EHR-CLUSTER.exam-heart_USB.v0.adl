@@ -196,7 +196,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"41da69f4597395695b29403df3084c38">
+		["MD5-CAM-1.0.1"] = <"20b4f7fc5c52c000741d363155eca9bf">
 		["build_uid"] = <"8316824f-db17-41ca-995e-52258d827738">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -935,16 +935,16 @@ ontology
 					description = <"Beschreibung der Spaltung eines Herztons.">
 				>
 				["at0.13"] = <
-					text = <"*Response to maneuvers (en)">
-					description = <"*Narrative description of the changes in a heart sound with various maneuvers (e.g., valsalva). (en)">
+					text = <"Veränderung durch Manöver">
+					description = <"Beschreibung der Veränderung eines Herztons durch Manöver (z.B. Valsalva).">
 				>
 				["at0.14"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of a heart sound. (en)">
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit eines Herztons darstellt.">
 				>
 				["at0.15"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about a heart sound, not captured in other fields. (en)">
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung eines Herztons, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0.16"] = <
 					text = <"*Heart murmur (en)">
