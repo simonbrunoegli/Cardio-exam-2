@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0f42afc85a86da89ef8d2149aced72d9">
+		["MD5-CAM-1.0.1"] = <"06e92ec83994348a23a6e193b491e95b">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -398,6 +398,11 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0.29] occurrences matches {0..1} matches {    -- Oedema
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
 
@@ -473,50 +478,6 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields.">
 				>
-				["at0000"] = <
-					text = <"Physical examination findings">
-					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
-				>
-				["at0001"] = <
-					text = <"System or structure examined">
-					description = <"Identification of the examined body system or anatomical structure.">
-					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
-				>
-				["at0003"] = <
-					text = <"Clinical description">
-					description = <"Narrative description of the overall findings observed during the physical examination.">
-				>
-				["at0004"] = <
-					text = <"Examination findings">
-					description = <"Structured details about the physical examination findings.">
-				>
-				["at0005"] = <
-					text = <"Multimedia representation">
-					description = <"Digital image, video or diagram representing the physical examination findings.">
-				>
-				["at0006"] = <
-					text = <"Clinical interpretation">
-					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
-					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
-				>
-				["at0007"] = <
-					text = <"Comment">
-					description = <"Additional narrative about the physical examination findings, not captured in other fields.">
-				>
-				["at0008"] = <
-					text = <"Examination not done">
-					description = <"Details to explicitly record that this examination was not performed.">
-				>
-				["at0011"] = <
-					text = <"Structured body site">
-					description = <"A structured description of the area of the body under examination.">
-					comment = <"If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.">
-				>
-				["at0012"] = <
-					text = <"Body site">
-					description = <"Identification of the area of the body under examination.">
-					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
-				>
 				["at0.14"] = <
 					text = <"Assessment of peripheral arteries">
 					description = <"Detailed description of the assessment of peripheral arteries.">
@@ -580,6 +541,54 @@ ontology
 				["at0.28"] = <
 					text = <"Comment">
 					description = <"Additional narrative about the assessment of peripheral veins findings not captured in other fields.">
+				>
+				["at0000"] = <
+					text = <"Physical examination findings">
+					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
+				>
+				["at0001"] = <
+					text = <"System or structure examined">
+					description = <"Identification of the examined body system or anatomical structure.">
+					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
+				>
+				["at0003"] = <
+					text = <"Clinical description">
+					description = <"Narrative description of the overall findings observed during the physical examination.">
+				>
+				["at0004"] = <
+					text = <"Examination findings">
+					description = <"Structured details about the physical examination findings.">
+				>
+				["at0005"] = <
+					text = <"Multimedia representation">
+					description = <"Digital image, video or diagram representing the physical examination findings.">
+				>
+				["at0006"] = <
+					text = <"Clinical interpretation">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
+					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
+				>
+				["at0007"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the physical examination findings, not captured in other fields.">
+				>
+				["at0008"] = <
+					text = <"Examination not done">
+					description = <"Details to explicitly record that this examination was not performed.">
+				>
+				["at0011"] = <
+					text = <"Structured body site">
+					description = <"A structured description of the area of the body under examination.">
+					comment = <"If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.">
+				>
+				["at0012"] = <
+					text = <"Body site">
+					description = <"Identification of the area of the body under examination.">
+					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
+				>
+				["at0.29"] = <
+					text = <"Oedema">
+					description = <"Narrative description of the oedema findings observed during the physical examination.">
 				>
 			>
 		>
@@ -652,50 +661,6 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
-				["at0000"] = <
-					text = <"Funn ved fysisk undersøkelse">
-					description = <"Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
-				>
-				["at0001"] = <
-					text = <"Undersøkt organsystem eller struktur">
-					description = <"Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.">
-					comment = <"Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig.">
-				>
-				["at0003"] = <
-					text = <"Klinisk beskrivelse">
-					description = <"Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen.">
-				>
-				["at0004"] = <
-					text = <"Spesifikke funn">
-					description = <"Ytterligere strukturerte detaljer om undersøkelsesfunnene.">
-				>
-				["at0005"] = <
-					text = <"Multimediarepresentasjon">
-					description = <"Digitale bilder, video eller diagram som representerer undersøkelsesfunnene.">
-				>
-				["at0006"] = <
-					text = <"Fortolkning">
-					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.">
-					comment = <"For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig.">
-				>
-				["at0007"] = <
-					text = <"Kommentar">
-					description = <"Ytterligere fritekst om funn ved undersøkelsen, som ikke dekkes av andre elementer.">
-				>
-				["at0008"] = <
-					text = <"Undersøkelse ikke utført">
-					description = <"Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført.">
-				>
-				["at0011"] = <
-					text = <"Strukturert anatomisk lokalisasjon">
-					description = <"Angivelse av en strukturert anatomisk lokalisering av det undersøkte organsystemet eller den anatomiske strukturen.">
-					comment = <"Hvis anatomisk lokalisasjon er entydig identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette SLOT'et ikke nødvendig å benytte.">
-				>
-				["at0012"] = <
-					text = <"Anatomisk lokalisasjon">
-					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
-					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
-				>
 				["at0.14"] = <
 					text = <"*Assessment of peripheral arteries (en)">
 					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
@@ -759,6 +724,54 @@ ontology
 				["at0.28"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+				>
+				["at0000"] = <
+					text = <"Funn ved fysisk undersøkelse">
+					description = <"Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
+				>
+				["at0001"] = <
+					text = <"Undersøkt organsystem eller struktur">
+					description = <"Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.">
+					comment = <"Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig.">
+				>
+				["at0003"] = <
+					text = <"Klinisk beskrivelse">
+					description = <"Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen.">
+				>
+				["at0004"] = <
+					text = <"Spesifikke funn">
+					description = <"Ytterligere strukturerte detaljer om undersøkelsesfunnene.">
+				>
+				["at0005"] = <
+					text = <"Multimediarepresentasjon">
+					description = <"Digitale bilder, video eller diagram som representerer undersøkelsesfunnene.">
+				>
+				["at0006"] = <
+					text = <"Fortolkning">
+					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.">
+					comment = <"For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig.">
+				>
+				["at0007"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om funn ved undersøkelsen, som ikke dekkes av andre elementer.">
+				>
+				["at0008"] = <
+					text = <"Undersøkelse ikke utført">
+					description = <"Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført.">
+				>
+				["at0011"] = <
+					text = <"Strukturert anatomisk lokalisasjon">
+					description = <"Angivelse av en strukturert anatomisk lokalisering av det undersøkte organsystemet eller den anatomiske strukturen.">
+					comment = <"Hvis anatomisk lokalisasjon er entydig identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette SLOT'et ikke nødvendig å benytte.">
+				>
+				["at0012"] = <
+					text = <"Anatomisk lokalisasjon">
+					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
+					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
@@ -831,50 +844,6 @@ ontology
 					text = <"Kommentar">
 					description = <"Zusätzliche Beschreibung der Ergebnisse der Untersuchung des Jugularvenendrucks, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
-				["at0000"] = <
-					text = <"Ergebnisse der körperlichen Untersuchung">
-					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
-				>
-				["at0001"] = <
-					text = <"Untersuchtes System oder untersuchte Struktur">
-					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
-					comment = <"Wenn möglich wird die Kodierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
-				>
-				["at0003"] = <
-					text = <"Klinische Beschreibung">
-					description = <"Beschreibung der bei der körperlichen Untersuchung beobachteten Gesamtbefunde.">
-				>
-				["at0004"] = <
-					text = <"Untersuchungsergebnisse">
-					description = <"Strukturierte Angaben zu den Ergebnissen der körperlichen Untersuchung.">
-				>
-				["at0005"] = <
-					text = <"Multimediale Darstellung">
-					description = <"Digitales Bild, Video oder Diagramm, das die Ergebnisse der körperlichen Untersuchung darstellt.">
-				>
-				["at0006"] = <
-					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
-					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
-				>
-				["at0007"] = <
-					text = <"Kommentar">
-					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
-				>
-				["at0008"] = <
-					text = <"Nicht durchgeführte Untersuchung">
-					description = <"Eine Aussage die ausdrücklich erfasst, dass die Untersuchung nicht durchgeführt wurde.">
-				>
-				["at0011"] = <
-					text = <"Strukturierte Körperstelle">
-					description = <"Eine strukturierte Beschreibung des zu untersuchenden Körperbereichs.">
-					comment = <"Wenn die Körperstelle im Datenelement \"Untersuchtes System oder untersuchte Struktur\" oder im Datenelement \"Körperstelle\" vollständig identifiziert wurde, wird die Verwendung dieses SLOT überflüssig.">
-				>
-				["at0012"] = <
-					text = <"Körperstelle">
-					description = <"Identifizierung des untersuchten Körperbereichs.">
-					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
-				>
 				["at0.14"] = <
 					text = <"Untersuchung der peripheren Arterien">
 					description = <"Detaillierte Beschreibung der Untersuchung der peripheren Arterien.">
@@ -938,6 +907,54 @@ ontology
 				["at0.28"] = <
 					text = <"Kommentar">
 					description = <"Zusätzliche Beschreibung der Ergebnisse der Untersuchung peripherer Venen, die in anderen Bereichen nicht erfasst werden konnten.">
+				>
+				["at0000"] = <
+					text = <"Ergebnisse der körperlichen Untersuchung">
+					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
+				>
+				["at0001"] = <
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Kodierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
+				>
+				["at0003"] = <
+					text = <"Klinische Beschreibung">
+					description = <"Beschreibung der bei der körperlichen Untersuchung beobachteten Gesamtbefunde.">
+				>
+				["at0004"] = <
+					text = <"Untersuchungsergebnisse">
+					description = <"Strukturierte Angaben zu den Ergebnissen der körperlichen Untersuchung.">
+				>
+				["at0005"] = <
+					text = <"Multimediale Darstellung">
+					description = <"Digitales Bild, Video oder Diagramm, das die Ergebnisse der körperlichen Untersuchung darstellt.">
+				>
+				["at0006"] = <
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
+				>
+				["at0007"] = <
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
+				>
+				["at0008"] = <
+					text = <"Nicht durchgeführte Untersuchung">
+					description = <"Eine Aussage die ausdrücklich erfasst, dass die Untersuchung nicht durchgeführt wurde.">
+				>
+				["at0011"] = <
+					text = <"Strukturierte Körperstelle">
+					description = <"Eine strukturierte Beschreibung des zu untersuchenden Körperbereichs.">
+					comment = <"Wenn die Körperstelle im Datenelement \"Untersuchtes System oder untersuchte Struktur\" oder im Datenelement \"Körperstelle\" vollständig identifiziert wurde, wird die Verwendung dieses SLOT überflüssig.">
+				>
+				["at0012"] = <
+					text = <"Körperstelle">
+					description = <"Identifizierung des untersuchten Körperbereichs.">
+					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
@@ -1010,50 +1027,6 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
-				["at0000"] = <
-					text = <"*Physical examination findings (en)">
-					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
-				>
-				["at0001"] = <
-					text = <"Sistema ou estrutura examinada">
-					description = <"Identificação do sistema do corpo examinado ou da estrutura anatômica.">
-					comment = <"A codificação do sistema ou estrutura examinada com uma terminologia é preferível, sempre que possível.">
-				>
-				["at0003"] = <
-					text = <"Descrição clínica">
-					description = <"Descrição narrativa dos achados gerais observados durante o exame físico.">
-				>
-				["at0004"] = <
-					text = <"Resultados do exame">
-					description = <"Detalhes estruturados sobre os resultados do exame físico.">
-				>
-				["at0005"] = <
-					text = <"Representação multimídia">
-					description = <"Imagem digital, vídeo ou diagrama representando os achados do exame físico.">
-				>
-				["at0006"] = <
-					text = <"Interpretação clínica">
-					description = <"Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
-				>
-				["at0007"] = <
-					text = <"Comentário">
-					description = <"Narrativa adicional sobre os achados do exame físico, não capturados em outros campos.">
-				>
-				["at0008"] = <
-					text = <"Exame não realizado">
-					description = <"Detalhes para registrar explicitamente que esse exame não foi realizado.">
-				>
-				["at0011"] = <
-					text = <"Local do corpo estruturado">
-					description = <"Uma descrição estruturada da área do corpo em exame.">
-					comment = <"Se o local do corpo tiver sido totalmente identificado no elemento de dados 'Sistema ou estrutura examinada' ou 'Local do corpo', esse SLOT se tornará redundante.">
-				>
-				["at0012"] = <
-					text = <"Local do corpo">
-					description = <"*Identification of the area of the body under examination. (en)">
-					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
-				>
 				["at0.14"] = <
 					text = <"*Assessment of peripheral arteries (en)">
 					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
@@ -1117,6 +1090,54 @@ ontology
 				["at0.28"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+				>
+				["at0000"] = <
+					text = <"*Physical examination findings (en)">
+					description = <"Constatações observadas durante o exame físico de um sistema corporal ou estrutura anatômica.">
+				>
+				["at0001"] = <
+					text = <"Sistema ou estrutura examinada">
+					description = <"Identificação do sistema do corpo examinado ou da estrutura anatômica.">
+					comment = <"A codificação do sistema ou estrutura examinada com uma terminologia é preferível, sempre que possível.">
+				>
+				["at0003"] = <
+					text = <"Descrição clínica">
+					description = <"Descrição narrativa dos achados gerais observados durante o exame físico.">
+				>
+				["at0004"] = <
+					text = <"Resultados do exame">
+					description = <"Detalhes estruturados sobre os resultados do exame físico.">
+				>
+				["at0005"] = <
+					text = <"Representação multimídia">
+					description = <"Imagem digital, vídeo ou diagrama representando os achados do exame físico.">
+				>
+				["at0006"] = <
+					text = <"Interpretação clínica">
+					description = <"Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0007"] = <
+					text = <"Comentário">
+					description = <"Narrativa adicional sobre os achados do exame físico, não capturados em outros campos.">
+				>
+				["at0008"] = <
+					text = <"Exame não realizado">
+					description = <"Detalhes para registrar explicitamente que esse exame não foi realizado.">
+				>
+				["at0011"] = <
+					text = <"Local do corpo estruturado">
+					description = <"Uma descrição estruturada da área do corpo em exame.">
+					comment = <"Se o local do corpo tiver sido totalmente identificado no elemento de dados 'Sistema ou estrutura examinada' ou 'Local do corpo', esse SLOT se tornará redundante.">
+				>
+				["at0012"] = <
+					text = <"Local do corpo">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
@@ -1189,50 +1210,6 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
-				["at0000"] = <
-					text = <"*Physical examination findings (en)">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
-				>
-				["at0001"] = <
-					text = <"System eller struktur som undersökts">
-					description = <"Identifiering av systemet eller strukturen som undersökts.">
-					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
-				>
-				["at0003"] = <
-					text = <"Klinisk beskrivning">
-					description = <"En övergripande beskrivning av fynden från den fysiska undersökningen. ">
-				>
-				["at0004"] = <
-					text = <"Fynd vid undersökning">
-					description = <"Strukturerade detaljer om fynd vid den fysiska undersökningen.">
-				>
-				["at0005"] = <
-					text = <"Multimedia-representation">
-					description = <"Digital bild, video eller diagram som återger fynd från undersökningen.">
-				>
-				["at0006"] = <
-					text = <"Klinisk tolkning">
-					description = <"Ord, fras eller kort beskrivning av fyndens kliniska betydelse.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
-				>
-				["at0007"] = <
-					text = <"Kommentar">
-					description = <"Kommentarer avseende undersökningsfynd som inte beskrivs i övriga fält.">
-				>
-				["at0008"] = <
-					text = <"Undersökning ej genomförd">
-					description = <"Detaljerad beskrivning om att undersökningen inte genomfördes.">
-				>
-				["at0011"] = <
-					text = <"Strukturerad anatomisk plats">
-					description = <"Strukturerad beskrivning av den anatomiska platsen som undersökts.">
-					comment = <"Om den anatomiska platsen kan identifieras helt via dataelementet \"System eller struktur som undersökts\" så blir denna del redundant.">
-				>
-				["at0012"] = <
-					text = <"Anatomisk plats">
-					description = <"*Identification of the area of the body under examination. (en)">
-					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
-				>
 				["at0.14"] = <
 					text = <"*Assessment of peripheral arteries (en)">
 					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
@@ -1296,6 +1273,54 @@ ontology
 				["at0.28"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+				>
+				["at0000"] = <
+					text = <"*Physical examination findings (en)">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
+				>
+				["at0001"] = <
+					text = <"System eller struktur som undersökts">
+					description = <"Identifiering av systemet eller strukturen som undersökts.">
+					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
+				>
+				["at0003"] = <
+					text = <"Klinisk beskrivning">
+					description = <"En övergripande beskrivning av fynden från den fysiska undersökningen. ">
+				>
+				["at0004"] = <
+					text = <"Fynd vid undersökning">
+					description = <"Strukturerade detaljer om fynd vid den fysiska undersökningen.">
+				>
+				["at0005"] = <
+					text = <"Multimedia-representation">
+					description = <"Digital bild, video eller diagram som återger fynd från undersökningen.">
+				>
+				["at0006"] = <
+					text = <"Klinisk tolkning">
+					description = <"Ord, fras eller kort beskrivning av fyndens kliniska betydelse.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0007"] = <
+					text = <"Kommentar">
+					description = <"Kommentarer avseende undersökningsfynd som inte beskrivs i övriga fält.">
+				>
+				["at0008"] = <
+					text = <"Undersökning ej genomförd">
+					description = <"Detaljerad beskrivning om att undersökningen inte genomfördes.">
+				>
+				["at0011"] = <
+					text = <"Strukturerad anatomisk plats">
+					description = <"Strukturerad beskrivning av den anatomiska platsen som undersökts.">
+					comment = <"Om den anatomiska platsen kan identifieras helt via dataelementet \"System eller struktur som undersökts\" så blir denna del redundant.">
+				>
+				["at0012"] = <
+					text = <"Anatomisk plats">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
@@ -1368,50 +1393,6 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
-				["at0000"] = <
-					text = <"*Physical examination findings (en)">
-					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
-				>
-				["at0001"] = <
-					text = <"Εξεταζόμενο σύστημα ή δομή">
-					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
-					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
-				>
-				["at0003"] = <
-					text = <"Κλινική Περιγραφή">
-					description = <"Αφηγηματική περιγραφή των συνολικών ευρημάτων που παρατηρήθηκαν κατά τη διάρκεια της φυσικής εξέτασης.">
-				>
-				["at0004"] = <
-					text = <"Ευρήματα εξέτασης">
-					description = <"Δομημένες λεπτομέρειες σχετικά με τα ευρήματα της φυσικής εξέτασης.">
-				>
-				["at0005"] = <
-					text = <"Αναπαράσταση πολυμέσων">
-					description = <"Ψηφιακή εικόνα, βίντεο ή διάγραμμα που αναπαριστά τα ευρήματα της φυσικής εξέτασης.">
-				>
-				["at0006"] = <
-					text = <"Κλινική αξιολόγηση">
-					description = <"Μία λέξη, φράση ή σύντομη περιγραφή που αντιπροσωπεύει την κλινική σημασία και σημασία των ευρημάτων της φυσικής εξέτασης.">
-					comment = <"Για παράδειγμα: «Δεν ανιχνεύθηκε ανωμαλία» ή «Υπάρχει μέτρια φλεγμονή». Προτιμάται η κωδικοποίηση της «κλινικής ερμηνείας» με ορολογία, όπου είναι δυνατόν.">
-				>
-				["at0007"] = <
-					text = <"Σχόλιο">
-					description = <"Πρόσθετη αφήγηση σχετικά με τα ευρήματα της φυσικής εξέτασης, που δεν αποτυπώνεται σε άλλους τομείς.">
-				>
-				["at0008"] = <
-					text = <"Λόγος διακοπής εξέτασης">
-					description = <"Λεπτομέρειες για να καταγραφεί ρητά ότι αυτή η εξέταση δεν διενεργήθηκε.">
-				>
-				["at0011"] = <
-					text = <"ω">
-					description = <"περιγραφή της περιοχής του υπό εξέταση σώματος.">
-					comment = <"*If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.(en)">
-				>
-				["at0012"] = <
-					text = <"Περιοχή σώματος">
-					description = <"*Identification of the area of the body under examination. (en)">
-					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
-				>
 				["at0.14"] = <
 					text = <"*Assessment of peripheral arteries (en)">
 					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
@@ -1475,6 +1456,54 @@ ontology
 				["at0.28"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+				>
+				["at0000"] = <
+					text = <"*Physical examination findings (en)">
+					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
+				>
+				["at0001"] = <
+					text = <"Εξεταζόμενο σύστημα ή δομή">
+					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
+					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
+				>
+				["at0003"] = <
+					text = <"Κλινική Περιγραφή">
+					description = <"Αφηγηματική περιγραφή των συνολικών ευρημάτων που παρατηρήθηκαν κατά τη διάρκεια της φυσικής εξέτασης.">
+				>
+				["at0004"] = <
+					text = <"Ευρήματα εξέτασης">
+					description = <"Δομημένες λεπτομέρειες σχετικά με τα ευρήματα της φυσικής εξέτασης.">
+				>
+				["at0005"] = <
+					text = <"Αναπαράσταση πολυμέσων">
+					description = <"Ψηφιακή εικόνα, βίντεο ή διάγραμμα που αναπαριστά τα ευρήματα της φυσικής εξέτασης.">
+				>
+				["at0006"] = <
+					text = <"Κλινική αξιολόγηση">
+					description = <"Μία λέξη, φράση ή σύντομη περιγραφή που αντιπροσωπεύει την κλινική σημασία και σημασία των ευρημάτων της φυσικής εξέτασης.">
+					comment = <"Για παράδειγμα: «Δεν ανιχνεύθηκε ανωμαλία» ή «Υπάρχει μέτρια φλεγμονή». Προτιμάται η κωδικοποίηση της «κλινικής ερμηνείας» με ορολογία, όπου είναι δυνατόν.">
+				>
+				["at0007"] = <
+					text = <"Σχόλιο">
+					description = <"Πρόσθετη αφήγηση σχετικά με τα ευρήματα της φυσικής εξέτασης, που δεν αποτυπώνεται σε άλλους τομείς.">
+				>
+				["at0008"] = <
+					text = <"Λόγος διακοπής εξέτασης">
+					description = <"Λεπτομέρειες για να καταγραφεί ρητά ότι αυτή η εξέταση δεν διενεργήθηκε.">
+				>
+				["at0011"] = <
+					text = <"ω">
+					description = <"περιγραφή της περιοχής του υπό εξέταση σώματος.">
+					comment = <"*If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.(en)">
+				>
+				["at0012"] = <
+					text = <"Περιοχή σώματος">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
@@ -1547,50 +1576,6 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
-				["at0000"] = <
-					text = <"*Physical examination findings (en)">
-					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
-				>
-				["at0001"] = <
-					text = <"*System or structure examined(en)">
-					description = <"*Identification of the examined body system or anatomical structure.(en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
-				>
-				["at0003"] = <
-					text = <"*Clinical description(en)">
-					description = <"*Narrative description of the overall findings observed during the physical examination.(en)">
-				>
-				["at0004"] = <
-					text = <"*Examination findings(en)">
-					description = <"*Structured details about the physical examination findings.(en)">
-				>
-				["at0005"] = <
-					text = <"*Multimedia representation(en)">
-					description = <"*Digital image, video or diagram representing the physical examination findings.(en)">
-				>
-				["at0006"] = <
-					text = <"*Clinical interpretation(en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.(en)">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.(en)">
-				>
-				["at0007"] = <
-					text = <"*Comment(en)">
-					description = <"*Additional narrative about the physical examination findings, not captured in other fields.(en)">
-				>
-				["at0008"] = <
-					text = <"*Examination not done(en)">
-					description = <"*Details to explicitly record that this examination was not performed.(en)">
-				>
-				["at0011"] = <
-					text = <"*Structured body site(en)">
-					description = <"*A structured description of the area of the body under examination.(en)">
-					comment = <"*If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.(en)">
-				>
-				["at0012"] = <
-					text = <"*Body site(en)">
-					description = <"*Identification of the area of the body under examination. (en)">
-					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
-				>
 				["at0.14"] = <
 					text = <"*Assessment of peripheral arteries (en)">
 					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
@@ -1654,6 +1639,54 @@ ontology
 				["at0.28"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+				>
+				["at0000"] = <
+					text = <"*Physical examination findings (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
+				>
+				["at0001"] = <
+					text = <"*System or structure examined(en)">
+					description = <"*Identification of the examined body system or anatomical structure.(en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
+				>
+				["at0003"] = <
+					text = <"*Clinical description(en)">
+					description = <"*Narrative description of the overall findings observed during the physical examination.(en)">
+				>
+				["at0004"] = <
+					text = <"*Examination findings(en)">
+					description = <"*Structured details about the physical examination findings.(en)">
+				>
+				["at0005"] = <
+					text = <"*Multimedia representation(en)">
+					description = <"*Digital image, video or diagram representing the physical examination findings.(en)">
+				>
+				["at0006"] = <
+					text = <"*Clinical interpretation(en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.(en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.(en)">
+				>
+				["at0007"] = <
+					text = <"*Comment(en)">
+					description = <"*Additional narrative about the physical examination findings, not captured in other fields.(en)">
+				>
+				["at0008"] = <
+					text = <"*Examination not done(en)">
+					description = <"*Details to explicitly record that this examination was not performed.(en)">
+				>
+				["at0011"] = <
+					text = <"*Structured body site(en)">
+					description = <"*A structured description of the area of the body under examination.(en)">
+					comment = <"*If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.(en)">
+				>
+				["at0012"] = <
+					text = <"*Body site(en)">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.29"] = <
+					text = <"*Oedema (en)">
+					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
 			>
 		>
