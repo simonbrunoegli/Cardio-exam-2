@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1c462399132db64e37586844a328d50e">
+		["MD5-CAM-1.0.1"] = <"74beee038b4fe5f26bd4bc4072fcdaaf">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -262,6 +262,11 @@ definition
 									[local::at0.4]    -- Jugular veins
 								}
 							}
+						}
+					}
+					ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Clinical description
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -348,6 +353,10 @@ ontology
 					text = <"Jugular veins">
 					description = <"The jugular veins were examined.">
 				>
+				["at0.5"] = <
+					text = <"Clinical description">
+					description = <"Narrative description of the examination of the jugular veins.">
+				>
 			>
 		>
 		["nb"] = <
@@ -425,6 +434,10 @@ ontology
 				["at0.4"] = <
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
+				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
 			>
 		>
@@ -504,6 +517,10 @@ ontology
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
 				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -581,6 +598,10 @@ ontology
 				["at0.4"] = <
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
+				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
 			>
 		>
@@ -660,6 +681,10 @@ ontology
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
 				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -738,6 +763,10 @@ ontology
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
 				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -815,6 +844,10 @@ ontology
 				["at0.4"] = <
 					text = <"*Jugular veins (en)">
 					description = <"*The jugular veins were examined. (en)">
+				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
 			>
 		>
