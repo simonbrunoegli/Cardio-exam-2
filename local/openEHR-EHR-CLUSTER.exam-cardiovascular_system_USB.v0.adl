@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"35a84e2e753e1d2e0fc878d5795a7bce">
+		["MD5-CAM-1.0.1"] = <"0f42afc85a86da89ef8d2149aced72d9">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -824,12 +824,12 @@ ontology
 				>
 				["at0.12"] = <
 					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchung des Jugularvenendrucks darstellt.">
 					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.13"] = <
 					text = <"Kommentar">
-					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der Untersuchung des Jugularvenendrucks, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0000"] = <
 					text = <"Ergebnisse der körperlichen Untersuchung">
@@ -910,12 +910,12 @@ ontology
 				>
 				["at0.22"] = <
 					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchung einer Arterie darstellt.">
 					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.23"] = <
 					text = <"Kommentar">
-					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der Untersuchung einer Arterie, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0.24"] = <
 					text = <"Untersuchung der peripheren Venen">
@@ -932,12 +932,12 @@ ontology
 				>
 				["at0.27"] = <
 					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchung peripherer Venen darstellt.">
 					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.28"] = <
 					text = <"Kommentar">
-					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der Untersuchung peripherer Venen, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 			>
 		>
