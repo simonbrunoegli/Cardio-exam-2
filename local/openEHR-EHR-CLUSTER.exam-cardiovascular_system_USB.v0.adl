@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aa091a1f722e3a8c3573c234d2729f05">
+		["MD5-CAM-1.0.1"] = <"69c54b9d3aed9c94306d7129286c1372">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -253,6 +253,7 @@ definition
 				include
 					archetype_id/value matches {/openEHR-EHR-CLUSTER\.exclusion_exam(-[a-zA-Z0-9_]+)*\.v1/}
 			}
+			CLUSTER[at0.2] occurrences matches {0..1} matches {*}    -- Assessment of the jugular venous pressure and waveform
 		}
 	}
 
@@ -322,6 +323,10 @@ ontology
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
+				["at0.2"] = <
+					text = <"Assessment of the jugular venous pressure and waveform">
+					description = <"Detailed description of the assessment of the jugular venous pressure.">
+				>
 			>
 		>
 		["nb"] = <
@@ -386,6 +391,10 @@ ontology
 					text = <"Anatomisk lokalisasjon">
 					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
 					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
+				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
 				>
 			>
 		>
@@ -452,6 +461,10 @@ ontology
 					description = <"Identifizierung des untersuchten Körperbereichs.">
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -516,6 +529,10 @@ ontology
 					text = <"Local do corpo">
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
 				>
 			>
 		>
@@ -582,6 +599,10 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -647,6 +668,10 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -711,6 +736,10 @@ ontology
 					text = <"*Body site(en)">
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
+				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
 				>
 			>
 		>
