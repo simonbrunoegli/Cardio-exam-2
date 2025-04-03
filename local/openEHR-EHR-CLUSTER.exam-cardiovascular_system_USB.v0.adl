@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"42e4dbfca365e1972627f19990f6bab7">
+		["MD5-CAM-1.0.1"] = <"1057737e20dd25b36234c857af5a1da1">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -825,7 +825,7 @@ ontology
 				["at0.12"] = <
 					text = <"Klinische Interpretation">
 					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.13"] = <
 					text = <"Kommentar">
@@ -876,59 +876,59 @@ ontology
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
 				["at0.14"] = <
-					text = <"*Assessment of peripheral arteries (en)">
-					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+					text = <"Untersuchung der peripheren Arterien">
+					description = <"Detaillierte Beschreibung der Untersuchung der peripheren Arterien.">
 				>
 				["at0.15"] = <
-					text = <"*System or structure examined (en)">
-					description = <"*Identification of the examined body system or anatomical structure. (en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Codierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
 				>
 				["at0.16"] = <
-					text = <"*Clinical description (en)">
-					description = <"*Narrative description of the examination of an artery. (en)">
+					text = <"Klinische Beschreibung">
+					description = <"Beschreibung der Untersuchung einer Arterie.">
 				>
 				["at0.17"] = <
-					text = <"*Palpation of pulse (en)">
-					description = <"*Narrative description if a pulse can be palpated. (en)">
+					text = <"Palpation des Pulses">
+					description = <"Beschreibung, ob ein Puls palpiert werden kann.">
 				>
 				["at0.18"] = <
-					text = <"*Regularity (en)">
-					description = <"*Narrative description of the regularity of the pulse. (en)">
+					text = <"Rhythmus">
+					description = <"Beschreibung des Rhythmus des Pulses.">
 				>
 				["at0.19"] = <
-					text = <"*Volume of pulse (en)">
-					description = <"*Narrative description of the volume of the pulse. (en)">
+					text = <"Pulsvolmen">
+					description = <"Beschreibung des Pulsvolumens.">
 				>
 				["at0.20"] = <
-					text = <"*Character of pulse (en)">
-					description = <"*Narrative description of the character of the pulse. (en)">
+					text = <"Pulscharakter">
+					description = <"Beschreibung des Pulscharakters.">
 				>
 				["at0.21"] = <
-					text = <"*Bruit (en)">
-					description = <"*Narrative description of a bruit. (en)">
+					text = <"Strömungsgeräusch">
+					description = <"Beschreibung, ob ein Strömungsgeräusch vorhanden ist.">
 				>
 				["at0.22"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.23"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 				["at0.24"] = <
-					text = <"*Assessment of peripheral veins (en)">
-					description = <"*Detailed description of the assessment of peripheral veins. (en)">
+					text = <"Untersuchung der peripheren Venen">
+					description = <"Detaillierte Beschreibung der Untersuchung der peripheren Venen.">
 				>
 				["at0.25"] = <
-					text = <"*System or structure examined (en)">
-					description = <"*Identification of the examined body system or anatomical structure. (en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Codierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
 				>
 				["at0.26"] = <
-					text = <"*Clinical description (en)">
-					description = <"*Narrative description of the examination of peripheral veins. (en)">
+					text = <"Klinische Beschreibung">
+					description = <"Beschreibung der Untersuchung einer Arterie.">
 				>
 				["at0.27"] = <
 					text = <"*Clinical interpretation (en)">
