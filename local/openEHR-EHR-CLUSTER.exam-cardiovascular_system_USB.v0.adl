@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d7ee887f7941c61bcf55d789f80294d7">
+		["MD5-CAM-1.0.1"] = <"5f3af1a412d6c1cc46eb8fa543e0c70a">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -438,6 +438,7 @@ ontology
 				["at0.12"] = <
 					text = <"Clinical interpretation">
 					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform.">
+					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
 				>
 				["at0.13"] = <
 					text = <"Comment">
@@ -552,6 +553,7 @@ ontology
 				["at0.12"] = <
 					text = <"*Clinical interpretation (en)">
 					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"*Comment (en)">
@@ -666,7 +668,7 @@ ontology
 				["at0.12"] = <
 					text = <"Klinische Interpretation">
 					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
-					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"Kommentar">
@@ -781,6 +783,7 @@ ontology
 				["at0.12"] = <
 					text = <"*Clinical interpretation (en)">
 					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"*Comment (en)">
@@ -895,6 +898,7 @@ ontology
 				["at0.12"] = <
 					text = <"*Clinical interpretation (en)">
 					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"*Comment (en)">
@@ -1009,6 +1013,7 @@ ontology
 				["at0.12"] = <
 					text = <"*Clinical interpretation (en)">
 					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"*Comment (en)">
@@ -1123,6 +1128,7 @@ ontology
 				["at0.12"] = <
 					text = <"*Clinical interpretation (en)">
 					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
 				>
 				["at0.13"] = <
 					text = <"*Comment (en)">
