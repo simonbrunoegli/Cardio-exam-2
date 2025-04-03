@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"74beee038b4fe5f26bd4bc4072fcdaaf">
+		["MD5-CAM-1.0.1"] = <"c2c958c2da06f3cd03ff624ce44398cb">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -265,6 +265,35 @@ definition
 						}
 					}
 					ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Clinical description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Column height
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"cm">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0.7] occurrences matches {0..1} matches {    -- Estimated jugular venous pressure
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::125]>
+								list = <
+									["1"] = <
+										units = <"cm[H2O]">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Waveform
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -357,6 +386,18 @@ ontology
 					text = <"Clinical description">
 					description = <"Narrative description of the examination of the jugular veins.">
 				>
+				["at0.6"] = <
+					text = <"Column height">
+					description = <"The observed height of the jugular vein filling level.">
+				>
+				["at0.7"] = <
+					text = <"Estimated jugular venous pressure">
+					description = <"The estimated jugular venous pressure.">
+				>
+				["at0.8"] = <
+					text = <"Waveform">
+					description = <"Narrative description of the jugular venous waveform.">
+				>
 			>
 		>
 		["nb"] = <
@@ -438,6 +479,18 @@ ontology
 				["at0.5"] = <
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
 			>
 		>
@@ -521,6 +574,18 @@ ontology
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -602,6 +667,18 @@ ontology
 				["at0.5"] = <
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
 			>
 		>
@@ -685,6 +762,18 @@ ontology
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -767,6 +856,18 @@ ontology
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
 				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -848,6 +949,18 @@ ontology
 				["at0.5"] = <
 					text = <"*Clinical description (en)">
 					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
 			>
 		>
