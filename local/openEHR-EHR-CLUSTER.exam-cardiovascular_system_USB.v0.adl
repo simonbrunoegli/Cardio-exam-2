@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"119e95073ae3261d21aaee4627498428">
+		["MD5-CAM-1.0.1"] = <"d7ee887f7941c61bcf55d789f80294d7">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -566,7 +566,7 @@ ontology
 					description = <"Das Herz-Kreislauf-System wurde untersucht.">
 				>
 				["at0000.1"] = <
-					text = <"*Examination of the cardiovascular system USB (en)">
+					text = <"Kardiovaskuläre Untersuchung">
 					description = <"Befunde bei der körperlichen Untersuchung des Herz-Kreislauf-Systems als Ganzes.">
 				>
 				["at0001.1"] = <
@@ -623,53 +623,54 @@ ontology
 					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
 				["at0.2"] = <
-					text = <"*Assessment of the jugular venous pressure and waveform (en)">
-					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+					text = <"Untersuchung des Jugularvenendrucks">
+					description = <"Detaillierte Beschreibung der Untersuchung des Jugularvenendrucks.">
 				>
 				["at0.3"] = <
-					text = <"*System or structure examined (en)">
-					description = <"*Identification of the examined body system or anatomical structure. (en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Codierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
 				>
 				["at0.4"] = <
-					text = <"*Jugular veins (en)">
-					description = <"*The jugular veins were examined. (en)">
+					text = <"Jugularvenen">
+					description = <"Die Jugularvenen wurden untersucht.">
 				>
 				["at0.5"] = <
-					text = <"*Clinical description (en)">
-					description = <"*Narrative description of the examination of the jugular veins. (en)">
+					text = <"Klinische Beschreibung">
+					description = <"Beschreibung des Jugularvenendrucks.">
 				>
 				["at0.6"] = <
-					text = <"*Column height (en)">
-					description = <"*The observed height of the jugular vein filling level. (en)">
+					text = <"Höhe der venösen Blutsäule">
+					description = <"Die beobachtete Höhe des venösen Blutfüllungslevels.">
 				>
 				["at0.7"] = <
-					text = <"*Estimated jugular venous pressure (en)">
-					description = <"*The estimated jugular venous pressure. (en)">
+					text = <"Geschätzter Jugularvenendruck">
+					description = <"Der geschätzte Jugularvenendruck.">
 				>
 				["at0.8"] = <
-					text = <"*Waveform (en)">
-					description = <"*Narrative description of the jugular venous waveform. (en)">
+					text = <"Jugularvenenpuls">
+					description = <"Beschreibung des Jugularvenenpulses.">
 				>
 				["at0.9"] = <
-					text = <"*Positional changes (en)">
-					description = <"*Narrative description of the response to positional changes. (en)">
+					text = <"Positionsabhängige Veränderung">
+					description = <"Beschreibung der Veränderung des Jugularvenendrucks bei Positionswechseln.">
 				>
 				["at0.10"] = <
-					text = <"*Respirophasic changes (en)">
-					description = <"*Narrative description of the response to respiration (e.g., Kussmaul sign). (en)">
+					text = <"Atemabhängige Veränderung">
+					description = <"Beschreibung der Veränderung des Jugularvenendrucks bei Atemmanövern.">
 				>
 				["at0.11"] = <
-					text = <"*Abdominojugular test (en)">
-					description = <"*Narrative description of the response to the abdominojugular test. (en)">
+					text = <"Hepatojugulärer Reflux">
+					description = <"Beschreibung der Veränderung des Jugularvenendrucks bei Prüfung des hepatojugulären Reflux.">
 				>
 				["at0.12"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.13"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 			>
 		>
