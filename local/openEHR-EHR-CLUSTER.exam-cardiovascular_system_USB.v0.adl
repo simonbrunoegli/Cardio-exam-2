@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5f3af1a412d6c1cc46eb8fa543e0c70a">
+		["MD5-CAM-1.0.1"] = <"7d7f8b5109f97ed0d9fb505e96dec9fc">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -325,6 +325,35 @@ definition
 					}
 				}
 			}
+			CLUSTER[at0.14] occurrences matches {0..*} matches {    -- Assessment of peripheral arteries
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0.15] occurrences matches {0..1} matches {    -- System or structure examined
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.16] occurrences matches {0..1} matches {    -- Clinical description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.17] occurrences matches {0..1} matches {    -- Palpation of pulse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.18] occurrences matches {0..1} matches {    -- Regularity
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.19] occurrences matches {0..1} matches {    -- Volume of pulse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -349,50 +378,6 @@ ontology
 				["at0004.1"] = <
 					text = <"Examination findings">
 					description = <"Structured details about the physical examination findings.">
-				>
-				["at0000"] = <
-					text = <"Physical examination findings">
-					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
-				>
-				["at0001"] = <
-					text = <"System or structure examined">
-					description = <"Identification of the examined body system or anatomical structure.">
-					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
-				>
-				["at0003"] = <
-					text = <"Clinical description">
-					description = <"Narrative description of the overall findings observed during the physical examination.">
-				>
-				["at0004"] = <
-					text = <"Examination findings">
-					description = <"Structured details about the physical examination findings.">
-				>
-				["at0005"] = <
-					text = <"Multimedia representation">
-					description = <"Digital image, video or diagram representing the physical examination findings.">
-				>
-				["at0006"] = <
-					text = <"Clinical interpretation">
-					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
-					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
-				>
-				["at0007"] = <
-					text = <"Comment">
-					description = <"Additional narrative about the physical examination findings, not captured in other fields.">
-				>
-				["at0008"] = <
-					text = <"Examination not done">
-					description = <"Details to explicitly record that this examination was not performed.">
-				>
-				["at0011"] = <
-					text = <"Structured body site">
-					description = <"A structured description of the area of the body under examination.">
-					comment = <"If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.">
-				>
-				["at0012"] = <
-					text = <"Body site">
-					description = <"Identification of the area of the body under examination.">
-					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
 				>
 				["at0.2"] = <
 					text = <"Assessment of the jugular venous pressure and waveform">
@@ -444,6 +429,75 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields.">
 				>
+				["at0000"] = <
+					text = <"Physical examination findings">
+					description = <"Findings observed during the physical examination of a body system or anatomical structure.">
+				>
+				["at0001"] = <
+					text = <"System or structure examined">
+					description = <"Identification of the examined body system or anatomical structure.">
+					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
+				>
+				["at0003"] = <
+					text = <"Clinical description">
+					description = <"Narrative description of the overall findings observed during the physical examination.">
+				>
+				["at0004"] = <
+					text = <"Examination findings">
+					description = <"Structured details about the physical examination findings.">
+				>
+				["at0005"] = <
+					text = <"Multimedia representation">
+					description = <"Digital image, video or diagram representing the physical examination findings.">
+				>
+				["at0006"] = <
+					text = <"Clinical interpretation">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.">
+					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
+				>
+				["at0007"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the physical examination findings, not captured in other fields.">
+				>
+				["at0008"] = <
+					text = <"Examination not done">
+					description = <"Details to explicitly record that this examination was not performed.">
+				>
+				["at0011"] = <
+					text = <"Structured body site">
+					description = <"A structured description of the area of the body under examination.">
+					comment = <"If the body site has been fully identified in the 'System or structure examined' or the 'Body site' data element, this SLOT becomes redundant.">
+				>
+				["at0012"] = <
+					text = <"Body site">
+					description = <"Identification of the area of the body under examination.">
+					comment = <"For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant.">
+				>
+				["at0.14"] = <
+					text = <"Assessment of peripheral arteries">
+					description = <"Detailed description of the assessment of peripheral arteries.">
+				>
+				["at0.15"] = <
+					text = <"System or structure examined">
+					description = <"Identification of the examined body system or anatomical structure.">
+					comment = <"Coding of the system or structure examined with a terminology is preferred, where possible.">
+				>
+				["at0.16"] = <
+					text = <"Clinical description">
+					description = <"Narrative description of the examination of an artery.">
+				>
+				["at0.17"] = <
+					text = <"Palpation of pulse">
+					description = <"Narrative description if a pulse can be palpated.">
+				>
+				["at0.18"] = <
+					text = <"Regularity">
+					description = <"Narrative description of the regularity of the pulse.">
+				>
+				["at0.19"] = <
+					text = <"Volume of pulse">
+					description = <"Narrative description of the volume of the pulse.">
+				>
 			>
 		>
 		["nb"] = <
@@ -464,50 +518,6 @@ ontology
 				["at0004.1"] = <
 					text = <"Spesifikke funn">
 					description = <"Ytterligere strukturerte detaljer om undersøkelsesfunnene.">
-				>
-				["at0000"] = <
-					text = <"Funn ved fysisk undersøkelse">
-					description = <"Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
-				>
-				["at0001"] = <
-					text = <"Undersøkt organsystem eller struktur">
-					description = <"Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.">
-					comment = <"Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig.">
-				>
-				["at0003"] = <
-					text = <"Klinisk beskrivelse">
-					description = <"Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen.">
-				>
-				["at0004"] = <
-					text = <"Spesifikke funn">
-					description = <"Ytterligere strukturerte detaljer om undersøkelsesfunnene.">
-				>
-				["at0005"] = <
-					text = <"Multimediarepresentasjon">
-					description = <"Digitale bilder, video eller diagram som representerer undersøkelsesfunnene.">
-				>
-				["at0006"] = <
-					text = <"Fortolkning">
-					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.">
-					comment = <"For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig.">
-				>
-				["at0007"] = <
-					text = <"Kommentar">
-					description = <"Ytterligere fritekst om funn ved undersøkelsen, som ikke dekkes av andre elementer.">
-				>
-				["at0008"] = <
-					text = <"Undersøkelse ikke utført">
-					description = <"Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført.">
-				>
-				["at0011"] = <
-					text = <"Strukturert anatomisk lokalisasjon">
-					description = <"Angivelse av en strukturert anatomisk lokalisering av det undersøkte organsystemet eller den anatomiske strukturen.">
-					comment = <"Hvis anatomisk lokalisasjon er entydig identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette SLOT'et ikke nødvendig å benytte.">
-				>
-				["at0012"] = <
-					text = <"Anatomisk lokalisasjon">
-					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
-					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
 				>
 				["at0.2"] = <
 					text = <"*Assessment of the jugular venous pressure and waveform (en)">
@@ -559,6 +569,75 @@ ontology
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
+				["at0000"] = <
+					text = <"Funn ved fysisk undersøkelse">
+					description = <"Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur.">
+				>
+				["at0001"] = <
+					text = <"Undersøkt organsystem eller struktur">
+					description = <"Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.">
+					comment = <"Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig.">
+				>
+				["at0003"] = <
+					text = <"Klinisk beskrivelse">
+					description = <"Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen.">
+				>
+				["at0004"] = <
+					text = <"Spesifikke funn">
+					description = <"Ytterligere strukturerte detaljer om undersøkelsesfunnene.">
+				>
+				["at0005"] = <
+					text = <"Multimediarepresentasjon">
+					description = <"Digitale bilder, video eller diagram som representerer undersøkelsesfunnene.">
+				>
+				["at0006"] = <
+					text = <"Fortolkning">
+					description = <"Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.">
+					comment = <"For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig.">
+				>
+				["at0007"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om funn ved undersøkelsen, som ikke dekkes av andre elementer.">
+				>
+				["at0008"] = <
+					text = <"Undersøkelse ikke utført">
+					description = <"Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført.">
+				>
+				["at0011"] = <
+					text = <"Strukturert anatomisk lokalisasjon">
+					description = <"Angivelse av en strukturert anatomisk lokalisering av det undersøkte organsystemet eller den anatomiske strukturen.">
+					comment = <"Hvis anatomisk lokalisasjon er entydig identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette SLOT'et ikke nødvendig å benytte.">
+				>
+				["at0012"] = <
+					text = <"Anatomisk lokalisasjon">
+					description = <"Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.">
+					comment = <"For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig.">
+				>
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+				>
+				["at0.15"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.16"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
+				>
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
+				>
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
+				>
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -579,50 +658,6 @@ ontology
 				["at0004.1"] = <
 					text = <"Untersuchungsergebnisse">
 					description = <"Strukturierte Angaben zu den Ergebnissen der körperlichen Untersuchung.">
-				>
-				["at0000"] = <
-					text = <"Ergebnisse der körperlichen Untersuchung">
-					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
-				>
-				["at0001"] = <
-					text = <"Untersuchtes System oder untersuchte Struktur">
-					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
-					comment = <"Wenn möglich wird die Kodierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
-				>
-				["at0003"] = <
-					text = <"Klinische Beschreibung">
-					description = <"Beschreibung der bei der körperlichen Untersuchung beobachteten Gesamtbefunde.">
-				>
-				["at0004"] = <
-					text = <"Untersuchungsergebnisse">
-					description = <"Strukturierte Angaben zu den Ergebnissen der körperlichen Untersuchung.">
-				>
-				["at0005"] = <
-					text = <"Multimediale Darstellung">
-					description = <"Digitales Bild, Video oder Diagramm, das die Ergebnisse der körperlichen Untersuchung darstellt.">
-				>
-				["at0006"] = <
-					text = <"Klinische Interpretation">
-					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
-					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
-				>
-				["at0007"] = <
-					text = <"Kommentar">
-					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
-				>
-				["at0008"] = <
-					text = <"Nicht durchgeführte Untersuchung">
-					description = <"Eine Aussage die ausdrücklich erfasst, dass die Untersuchung nicht durchgeführt wurde.">
-				>
-				["at0011"] = <
-					text = <"Strukturierte Körperstelle">
-					description = <"Eine strukturierte Beschreibung des zu untersuchenden Körperbereichs.">
-					comment = <"Wenn die Körperstelle im Datenelement \"Untersuchtes System oder untersuchte Struktur\" oder im Datenelement \"Körperstelle\" vollständig identifiziert wurde, wird die Verwendung dieses SLOT überflüssig.">
-				>
-				["at0012"] = <
-					text = <"Körperstelle">
-					description = <"Identifizierung des untersuchten Körperbereichs.">
-					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
 				>
 				["at0.2"] = <
 					text = <"Untersuchung des Jugularvenendrucks">
@@ -674,6 +709,75 @@ ontology
 					text = <"Kommentar">
 					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
+				["at0000"] = <
+					text = <"Ergebnisse der körperlichen Untersuchung">
+					description = <"Während der körperlichen Untersuchung eines Körpersystems oder einer anatomischen Struktur beobachtete Befunde.">
+				>
+				["at0001"] = <
+					text = <"Untersuchtes System oder untersuchte Struktur">
+					description = <"Identifizierung des untersuchten Körpersystems oder der anatomischen Struktur.">
+					comment = <"Wenn möglich wird die Kodierung des untersuchten Systems oder der untersuchten Struktur mit einer Terminologie bevorzugt.">
+				>
+				["at0003"] = <
+					text = <"Klinische Beschreibung">
+					description = <"Beschreibung der bei der körperlichen Untersuchung beobachteten Gesamtbefunde.">
+				>
+				["at0004"] = <
+					text = <"Untersuchungsergebnisse">
+					description = <"Strukturierte Angaben zu den Ergebnissen der körperlichen Untersuchung.">
+				>
+				["at0005"] = <
+					text = <"Multimediale Darstellung">
+					description = <"Digitales Bild, Video oder Diagramm, das die Ergebnisse der körperlichen Untersuchung darstellt.">
+				>
+				["at0006"] = <
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
+				>
+				["at0007"] = <
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
+				>
+				["at0008"] = <
+					text = <"Nicht durchgeführte Untersuchung">
+					description = <"Eine Aussage die ausdrücklich erfasst, dass die Untersuchung nicht durchgeführt wurde.">
+				>
+				["at0011"] = <
+					text = <"Strukturierte Körperstelle">
+					description = <"Eine strukturierte Beschreibung des zu untersuchenden Körperbereichs.">
+					comment = <"Wenn die Körperstelle im Datenelement \"Untersuchtes System oder untersuchte Struktur\" oder im Datenelement \"Körperstelle\" vollständig identifiziert wurde, wird die Verwendung dieses SLOT überflüssig.">
+				>
+				["at0012"] = <
+					text = <"Körperstelle">
+					description = <"Identifizierung des untersuchten Körperbereichs.">
+					comment = <"Zum Beispiel die Untersuchung einer bestimmten Hautpartie. Wenn die Körperstelle im Datenelement „Untersuchtes System oder Struktur“ vollständig identifiziert wurde, wird dieses Datenelement überflüssig.">
+				>
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+				>
+				["at0.15"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.16"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
+				>
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
+				>
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
+				>
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -694,6 +798,56 @@ ontology
 				["at0004.1"] = <
 					text = <"Resultados do exame">
 					description = <"Detalhes estruturados sobre os resultados do exame físico.">
+				>
+				["at0.2"] = <
+					text = <"*Assessment of the jugular venous pressure and waveform (en)">
+					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+				>
+				["at0.3"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.4"] = <
+					text = <"*Jugular veins (en)">
+					description = <"*The jugular veins were examined. (en)">
+				>
+				["at0.5"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of the jugular veins. (en)">
+				>
+				["at0.6"] = <
+					text = <"*Column height (en)">
+					description = <"*The observed height of the jugular vein filling level. (en)">
+				>
+				["at0.7"] = <
+					text = <"*Estimated jugular venous pressure (en)">
+					description = <"*The estimated jugular venous pressure. (en)">
+				>
+				["at0.8"] = <
+					text = <"*Waveform (en)">
+					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Narrative description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Narrative description of the response to respiration (e.g., Kussmaul sign). (en)">
+				>
+				["at0.11"] = <
+					text = <"*Abdominojugular test (en)">
+					description = <"*Narrative description of the response to the abdominojugular test. (en)">
+				>
+				["at0.12"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.13"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -739,6 +893,52 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+				>
+				["at0.15"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.16"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
+				>
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
+				>
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
+				>
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the cardiovascular system USB (en)">
+					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
+				>
+				["at0001.1"] = <
+					text = <"System eller struktur som undersökts">
+					description = <"Identifiering av systemet eller strukturen som undersökts.">
+					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
+				>
+				["at0.1"] = <
+					text = <"Cardiovascular system">
+					description = <"The cardiovascular system was examined.">
+				>
+				["at0004.1"] = <
+					text = <"Fynd vid undersökning">
+					description = <"Strukturerade detaljer om fynd vid den fysiska undersökningen.">
+				>
 				["at0.2"] = <
 					text = <"*Assessment of the jugular venous pressure and waveform (en)">
 					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
@@ -788,27 +988,6 @@ ontology
 				["at0.13"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
-				>
-			>
-		>
-		["sv"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the cardiovascular system USB (en)">
-					description = <"Observerade fynd vid fysisk undersökning av system i kroppen, eller av anatomisk struktur">
-				>
-				["at0001.1"] = <
-					text = <"System eller struktur som undersökts">
-					description = <"Identifiering av systemet eller strukturen som undersökts.">
-					comment = <"Om möjligt, koda systemet eller strukturen med hjälp av ett terminologisystem.">
-				>
-				["at0.1"] = <
-					text = <"Cardiovascular system">
-					description = <"The cardiovascular system was examined.">
-				>
-				["at0004.1"] = <
-					text = <"Fynd vid undersökning">
-					description = <"Strukturerade detaljer om fynd vid den fysiska undersökningen.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -854,6 +1033,52 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+				>
+				["at0.15"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.16"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
+				>
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
+				>
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
+				>
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+			>
+		>
+		["el"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the cardiovascular system USB (en)">
+					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
+				>
+				["at0001.1"] = <
+					text = <"Εξεταζόμενο σύστημα ή δομή">
+					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
+					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
+				>
+				["at0.1"] = <
+					text = <"Cardiovascular system">
+					description = <"The cardiovascular system was examined.">
+				>
+				["at0004.1"] = <
+					text = <"Ευρήματα εξέτασης">
+					description = <"Δομημένες λεπτομέρειες σχετικά με τα ευρήματα της φυσικής εξέτασης.">
+				>
 				["at0.2"] = <
 					text = <"*Assessment of the jugular venous pressure and waveform (en)">
 					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
@@ -903,27 +1128,6 @@ ontology
 				["at0.13"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
-				>
-			>
-		>
-		["el"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the cardiovascular system USB (en)">
-					description = <"Ευρήματα που παρατηρούνται κατά τη φυσική εξέταση ενός συστήματος σώματος ή ανατομικής δομής.">
-				>
-				["at0001.1"] = <
-					text = <"Εξεταζόμενο σύστημα ή δομή">
-					description = <"Ταυτοποίηση του εξεταζόμενου συστήματος σώματος ή ανατομικής δομής.">
-					comment = <"Προτιμάται η κωδικοποίηση του συστήματος ή της δομής που εξετάζεται με ορολογία, όπου είναι δυνατόν.">
-				>
-				["at0.1"] = <
-					text = <"Cardiovascular system">
-					description = <"The cardiovascular system was examined.">
-				>
-				["at0004.1"] = <
-					text = <"Ευρήματα εξέτασης">
-					description = <"Δομημένες λεπτομέρειες σχετικά με τα ευρήματα της φυσικής εξέτασης.">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -969,6 +1173,52 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
+				>
+				["at0.15"] = <
+					text = <"*System or structure examined (en)">
+					description = <"*Identification of the examined body system or anatomical structure. (en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
+				>
+				["at0.16"] = <
+					text = <"*Clinical description (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
+				>
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
+				>
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
+				>
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+			>
+		>
+		["es"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*Examination of the cardiovascular system USB (en)">
+					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
+				>
+				["at0001.1"] = <
+					text = <"*System or structure examined(en)">
+					description = <"*Identification of the examined body system or anatomical structure.(en)">
+					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
+				>
+				["at0.1"] = <
+					text = <"Cardiovascular system">
+					description = <"The cardiovascular system was examined.">
+				>
+				["at0004.1"] = <
+					text = <"*Examination findings(en)">
+					description = <"*Structured details about the physical examination findings.(en)">
+				>
 				["at0.2"] = <
 					text = <"*Assessment of the jugular venous pressure and waveform (en)">
 					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
@@ -1018,27 +1268,6 @@ ontology
 				["at0.13"] = <
 					text = <"*Comment (en)">
 					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
-				>
-			>
-		>
-		["es"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"*Examination of the cardiovascular system USB (en)">
-					description = <"*Findings observed during the physical examination of a body system or anatomical structure.(en)">
-				>
-				["at0001.1"] = <
-					text = <"*System or structure examined(en)">
-					description = <"*Identification of the examined body system or anatomical structure.(en)">
-					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible.(en)">
-				>
-				["at0.1"] = <
-					text = <"Cardiovascular system">
-					description = <"The cardiovascular system was examined.">
-				>
-				["at0004.1"] = <
-					text = <"*Examination findings(en)">
-					description = <"*Structured details about the physical examination findings.(en)">
 				>
 				["at0000"] = <
 					text = <"*Physical examination findings (en)">
@@ -1084,55 +1313,30 @@ ontology
 					description = <"*Identification of the area of the body under examination. (en)">
 					comment = <"*For example examination of a specific area of skin. If the body site has been fully identified in the 'System or structure examined' data element, this data element becomes redundant. (en)">
 				>
-				["at0.2"] = <
-					text = <"*Assessment of the jugular venous pressure and waveform (en)">
-					description = <"*Detailed description of the assessment of the jugular venous pressure. (en)">
+				["at0.14"] = <
+					text = <"*Assessment of peripheral arteries (en)">
+					description = <"*Detailed description of the assessment of peripheral arteries. (en)">
 				>
-				["at0.3"] = <
+				["at0.15"] = <
 					text = <"*System or structure examined (en)">
 					description = <"*Identification of the examined body system or anatomical structure. (en)">
 					comment = <"*Coding of the system or structure examined with a terminology is preferred, where possible. (en)">
 				>
-				["at0.4"] = <
-					text = <"*Jugular veins (en)">
-					description = <"*The jugular veins were examined. (en)">
-				>
-				["at0.5"] = <
+				["at0.16"] = <
 					text = <"*Clinical description (en)">
-					description = <"*Narrative description of the examination of the jugular veins. (en)">
+					description = <"*Narrative description of the examination of an artery. (en)">
 				>
-				["at0.6"] = <
-					text = <"*Column height (en)">
-					description = <"*The observed height of the jugular vein filling level. (en)">
+				["at0.17"] = <
+					text = <"*Palpation of pulse (en)">
+					description = <"*Narrative description if a pulse can be palpated. (en)">
 				>
-				["at0.7"] = <
-					text = <"*Estimated jugular venous pressure (en)">
-					description = <"*The estimated jugular venous pressure. (en)">
+				["at0.18"] = <
+					text = <"*Regularity (en)">
+					description = <"*Narrative description of the regularity of the pulse. (en)">
 				>
-				["at0.8"] = <
-					text = <"*Waveform (en)">
-					description = <"*Narrative description of the jugular venous waveform. (en)">
-				>
-				["at0.9"] = <
-					text = <"*Positional changes (en)">
-					description = <"*Narrative description of the response to positional changes. (en)">
-				>
-				["at0.10"] = <
-					text = <"*Respirophasic changes (en)">
-					description = <"*Narrative description of the response to respiration (e.g., Kussmaul sign). (en)">
-				>
-				["at0.11"] = <
-					text = <"*Abdominojugular test (en)">
-					description = <"*Narrative description of the response to the abdominojugular test. (en)">
-				>
-				["at0.12"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of the jugular venous pressure and waveform. (en)">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
-				>
-				["at0.13"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the assessment of the jugular venous pressure and waveform findings not captured in other fields. (en)">
+				["at0.19"] = <
+					text = <"*Volume of pulse (en)">
+					description = <"*Narrative description of the volume of the pulse. (en)">
 				>
 			>
 		>
