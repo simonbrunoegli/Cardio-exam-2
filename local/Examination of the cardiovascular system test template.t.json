@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "88dda414dcc11f969f7f79fce36061b4",
+      "MD5-CAM-1.0.1" : "52531166b5fc54e482ee5638b0063a93",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8"
     },
     "details" : {
@@ -438,6 +438,20 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0011.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..1",
@@ -446,6 +460,34 @@
                       "attributeTuples" : [ ],
                       "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-cardiovascular_system_USB-001.v0",
                       "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0009",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1738,7 +1780,7 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "defaultValue" : {
-                    "value" : "Aorta abdominalis",
+                    "value" : "Arteria femoralis rechts",
                     "@type" : "DV_TEXT"
                   },
                   "attributes" : [ {
@@ -1747,7 +1789,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Aorta abdominalis" ]
+                      "constraint" : [ "Arteria femoralis rechts" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1862,7 +1904,7 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "defaultValue" : {
-                    "value" : "Aorta abdominalis",
+                    "value" : "Arteria femoralis links",
                     "@type" : "DV_TEXT"
                   },
                   "attributes" : [ {
@@ -1871,7 +1913,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Aorta abdominalis" ]
+                      "constraint" : [ "Arteria femoralis links" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1969,6 +2011,533 @@
           } ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0.14.10",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.15.10",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Arteria poplitealis rechts",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Arteria poplitealis rechts" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.16.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.17.10",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Palpabel", "Nicht palpabel" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.18.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.19.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.20.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.21.10",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Kein Strömungsgeräusch", "Strömungsgeräusch vorhanden" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.22.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.23.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0.14.11",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.15.11",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Arteria poplitealis links",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Arteria poplitealis links" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.16.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.17.11",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Palpabel", "Nicht palpabel" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.18.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.19.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.20.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.21.11",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Kein Strömungsgeräusch", "Strömungsgeräusch vorhanden" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.22.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.23.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0.14.12",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.15.12",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Arteria tibialis posterior rechts",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Arteria tibialis posterior rechts" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.16.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.17.12",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Palpabel", "Nicht palpabel" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.18.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.19.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.20.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.21.12",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Kein Strömungsgeräusch", "Strömungsgeräusch vorhanden" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.22.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.23.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0.14.13",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.15.13",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Arteria tibialis posterior links",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Arteria tibialis posterior links" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.16.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.17.13",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Palpabel", "Nicht palpabel" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.18.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.19.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.20.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.21.13",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Kein Strömungsgeräusch", "Strömungsgeräusch vorhanden" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.22.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.23.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0.24",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.25.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.27.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0.28.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -2039,6 +2608,30 @@
             "code" : "at0.14.9",
             "text" : "Left femoral artery",
             "description" : "Detailed description of the assessment of peripheral arteries."
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.10",
+            "text" : "Right popliteal artery",
+            "description" : "Detailed description of the assessment of peripheral arteries."
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.11",
+            "text" : "Left popliteal artery",
+            "description" : "Detailed description of the assessment of peripheral arteries."
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.12",
+            "text" : "Right posterior tibial artery",
+            "description" : "Detailed description of the assessment of peripheral arteries."
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.13",
+            "text" : "Left posterior tibial artery",
+            "description" : "Detailed description of the assessment of peripheral arteries."
           }
         },
         "nb" : {
@@ -2088,6 +2681,30 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.14.1",
             "text" : "*Assessment of peripheral arteries (en) (9)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (10)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (11)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (12)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (13)",
             "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
           }
         },
@@ -2139,6 +2756,30 @@
             "code" : "at0.14.1",
             "text" : "Untersuchung der peripheren Arterien (9)",
             "description" : "Detaillierte Beschreibung der Untersuchung der peripheren Arterien."
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "Untersuchung der peripheren Arterien (10)",
+            "description" : "Detaillierte Beschreibung der Untersuchung der peripheren Arterien."
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "Untersuchung der peripheren Arterien (11)",
+            "description" : "Detaillierte Beschreibung der Untersuchung der peripheren Arterien."
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "Untersuchung der peripheren Arterien (12)",
+            "description" : "Detaillierte Beschreibung der Untersuchung der peripheren Arterien."
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "Untersuchung der peripheren Arterien (13)",
+            "description" : "Detaillierte Beschreibung der Untersuchung der peripheren Arterien."
           }
         },
         "pt-br" : {
@@ -2188,6 +2829,30 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.14.1",
             "text" : "*Assessment of peripheral arteries (en) (9)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (10)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (11)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (12)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (13)",
             "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
           }
         },
@@ -2239,6 +2904,30 @@
             "code" : "at0.14.1",
             "text" : "*Assessment of peripheral arteries (en) (9)",
             "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (10)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (11)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (12)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (13)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
           }
         },
         "el" : {
@@ -2289,6 +2978,30 @@
             "code" : "at0.14.1",
             "text" : "*Assessment of peripheral arteries (en) (9)",
             "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (10)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (11)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (12)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (13)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
           }
         },
         "es" : {
@@ -2338,6 +3051,30 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.14.1",
             "text" : "*Assessment of peripheral arteries (en) (9)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (10)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (11)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (12)",
+            "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
+          },
+          "at0.14.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.14.1",
+            "text" : "*Assessment of peripheral arteries (en) (13)",
             "description" : "*Detailed description of the assessment of peripheral arteries. (en)"
           }
         }
