@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c2c958c2da06f3cd03ff624ce44398cb">
+		["MD5-CAM-1.0.1"] = <"b66d276adcd85f42591feb6304dff301">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -294,6 +294,16 @@ definition
 						}
 					}
 					ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Waveform
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Positional changes
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Respirophasic changes
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -398,6 +408,14 @@ ontology
 					text = <"Waveform">
 					description = <"Narrative description of the jugular venous waveform.">
 				>
+				["at0.9"] = <
+					text = <"Positional changes">
+					description = <"Description of the response to positional changes.">
+				>
+				["at0.10"] = <
+					text = <"Respirophasic changes">
+					description = <"Description of the response to respiration (e.g., Kussmaul sign).">
+				>
 			>
 		>
 		["nb"] = <
@@ -491,6 +509,14 @@ ontology
 				["at0.8"] = <
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
 				>
 			>
 		>
@@ -586,6 +612,14 @@ ontology
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -679,6 +713,14 @@ ontology
 				["at0.8"] = <
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
 				>
 			>
 		>
@@ -774,6 +816,14 @@ ontology
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -868,6 +918,14 @@ ontology
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
 				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -961,6 +1019,14 @@ ontology
 				["at0.8"] = <
 					text = <"*Waveform (en)">
 					description = <"*Narrative description of the jugular venous waveform. (en)">
+				>
+				["at0.9"] = <
+					text = <"*Positional changes (en)">
+					description = <"*Description of the response to positional changes. (en)">
+				>
+				["at0.10"] = <
+					text = <"*Respirophasic changes (en)">
+					description = <"*Description of the response to respiration (e.g., Kussmaul sign). (en)">
 				>
 			>
 		>
