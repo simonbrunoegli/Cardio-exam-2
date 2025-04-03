@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"06e92ec83994348a23a6e193b491e95b">
+		["MD5-CAM-1.0.1"] = <"159943bb566bbcdbeb22b3d459111ee8">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -403,6 +403,11 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Peripheral perfusion
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
 
@@ -590,6 +595,10 @@ ontology
 					text = <"Oedema">
 					description = <"Narrative description of the oedema findings observed during the physical examination.">
 				>
+				["at0.30"] = <
+					text = <"Peripheral perfusion">
+					description = <"Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions).">
+				>
 			>
 		>
 		["nb"] = <
@@ -772,6 +781,10 @@ ontology
 				["at0.29"] = <
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
+				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
 				>
 			>
 		>
@@ -956,6 +969,10 @@ ontology
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1138,6 +1155,10 @@ ontology
 				["at0.29"] = <
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
+				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
 				>
 			>
 		>
@@ -1322,6 +1343,10 @@ ontology
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -1505,6 +1530,10 @@ ontology
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
 				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -1687,6 +1716,10 @@ ontology
 				["at0.29"] = <
 					text = <"*Oedema (en)">
 					description = <"*Narrative description of the oedema findings observed during the physical examination. (en)">
+				>
+				["at0.30"] = <
+					text = <"*Peripheral perfusion (en)">
+					description = <"*Narrative description of the findings observed during the assessment of peripheral perfusion (e.g. capillary refill, temperature of hands and feet, lesions). (en)">
 				>
 			>
 		>
