@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7d7f8b5109f97ed0d9fb505e96dec9fc">
+		["MD5-CAM-1.0.1"] = <"3b1c8088b334fdbab1cac666eaebef20">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -352,6 +352,26 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0.20] occurrences matches {0..1} matches {    -- Character of pulse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.21] occurrences matches {0..1} matches {    -- Bruit
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.22] occurrences matches {0..1} matches {    -- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.23] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 				}
 			}
 		}
@@ -498,6 +518,23 @@ ontology
 					text = <"Volume of pulse">
 					description = <"Narrative description of the volume of the pulse.">
 				>
+				["at0.20"] = <
+					text = <"Character of pulse">
+					description = <"Narrative description of the character of the pulse.">
+				>
+				["at0.21"] = <
+					text = <"Bruit">
+					description = <"Narrative description of a bruit.">
+				>
+				["at0.22"] = <
+					text = <"Clinical interpretation">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery.">
+					comment = <"For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.">
+				>
+				["at0.23"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the assessment of an artery findings not captured in other fields.">
+				>
 			>
 		>
 		["nb"] = <
@@ -637,6 +674,23 @@ ontology
 				["at0.19"] = <
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
 				>
 			>
 		>
@@ -778,6 +832,23 @@ ontology
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
 				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -917,6 +988,23 @@ ontology
 				["at0.19"] = <
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
 				>
 			>
 		>
@@ -1058,6 +1146,23 @@ ontology
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
 				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
+				>
 			>
 		>
 		["el"] = <
@@ -1198,6 +1303,23 @@ ontology
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
 				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
+				>
 			>
 		>
 		["es"] = <
@@ -1337,6 +1459,23 @@ ontology
 				["at0.19"] = <
 					text = <"*Volume of pulse (en)">
 					description = <"*Narrative description of the volume of the pulse. (en)">
+				>
+				["at0.20"] = <
+					text = <"*Character of pulse (en)">
+					description = <"*Narrative description of the character of the pulse. (en)">
+				>
+				["at0.21"] = <
+					text = <"*Bruit (en)">
+					description = <"*Narrative description of a bruit. (en)">
+				>
+				["at0.22"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of an artery. (en)">
+					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+				>
+				["at0.23"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the assessment of an artery findings not captured in other fields. (en)">
 				>
 			>
 		>
