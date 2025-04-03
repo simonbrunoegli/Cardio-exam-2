@@ -199,7 +199,7 @@ Not to be used for recording the results of an imaging examination - use the CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1057737e20dd25b36234c857af5a1da1">
+		["MD5-CAM-1.0.1"] = <"35a84e2e753e1d2e0fc878d5795a7bce">
 		["build_uid"] = <"598a0760-a46e-40c2-8139-14666d19d583">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -374,7 +374,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0.24] occurrences matches {0..1} matches {    -- Assessment of peripheral veins
+			CLUSTER[at0.24] occurrences matches {0..*} matches {    -- Assessment of peripheral veins
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0.25] occurrences matches {0..1} matches {    -- System or structure examined
 						value matches {
@@ -928,16 +928,16 @@ ontology
 				>
 				["at0.26"] = <
 					text = <"Klinische Beschreibung">
-					description = <"Beschreibung der Untersuchung einer Arterie.">
+					description = <"Beschreibung der Untersuchung peripherer Venen.">
 				>
 				["at0.27"] = <
-					text = <"*Clinical interpretation (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of the assessment of peripheral veins. (en)">
-					comment = <"*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)">
+					text = <"Klinische Interpretation">
+					description = <"Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.">
+					comment = <"Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt.">
 				>
 				["at0.28"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the assessment of peripheral veins findings not captured in other fields. (en)">
+					text = <"Kommentar">
+					description = <"Zusätzliche Beschreibung der Ergebnisse der körperlichen Untersuchung, die in anderen Bereichen nicht erfasst werden konnten.">
 				>
 			>
 		>
